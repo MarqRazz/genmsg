@@ -20,15 +20,12 @@
   <author>Ken Conley</author>
   <author>Dirk Thomas</author>
 
-  <buildtool_depend version_gte="0.5.74">catkin</buildtool_depend>
-  <buildtool_depend condition="$ROS_PYTHON_VERSION == 2">python-setuptools</buildtool_depend>
-  <buildtool_depend condition="$ROS_PYTHON_VERSION == 3">python3-setuptools</buildtool_depend>
-  <exec_depend>catkin</exec_depend>
-  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-empy</exec_depend>
-  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-empy</exec_depend>
+  <buildtool_depend>python3-setuptools</buildtool_depend>
+  <exec_depend>python3-empy</exec_depend>
 
   <export>
     <rosdoc config="rosdoc.yaml"/>
+    <build_type>ament_python</build_type>
     <architecture_independent/>
   </export>
 </package>
